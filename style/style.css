@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: hsl(204deg, 43%, 93%);
+}
+body section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body section #container {
+  max-width: 350px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: hsl(204deg, 43%, 93%);
+}
+@media (min-width: 1024px) {
+  body section #container {
+    max-width: 700px;
+  }
+}
+@media (min-width: 1024px) {
+  body section #container #sub-container {
+    display: flex;
+    max-width: 700px;
+  }
+}
+body section #container .card {
+  padding: 1rem 1.5rem;
+}
+body section #container #join-community {
+  background-color: white;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+body section #container #join-community h1 {
+  color: hsl(179deg, 62%, 43%);
+}
+body section #container #join-community h3 {
+  color: hsl(71deg, 73%, 54%);
+}
+body section #container #join-community p {
+  color: hsl(218deg, 22%, 67%);
+  line-height: 2rem;
+}
+body section #container #monthly-sub {
+  background-color: hsl(179deg, 62%, 43%);
+  color: hsl(204deg, 43%, 93%);
+}
+@media (min-width: 1024px) {
+  body section #container #monthly-sub {
+    border-bottom-left-radius: 0.5rem;
+    width: 350px;
+  }
+}
+body section #container #monthly-sub #price {
+  display: flex;
+  align-items: center;
+}
+body section #container #monthly-sub #price-bold {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+body section #container #monthly-sub a {
+  text-decoration: none;
+  display: block;
+  background-color: hsl(71deg, 73%, 54%);
+  color: white;
+  text-align: center;
+  padding: 0.8rem 0rem;
+  border-radius: 0.25rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+body section #container #why-us {
+  background-color: rgb(107, 188, 188);
+  color: hsl(204deg, 43%, 93%);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+@media (min-width: 1024px) {
+  body section #container #why-us {
+    border-bottom-left-radius: 0rem;
+    width: 350px;
+  }
+}
+body section #container #why-us ul {
+  list-style-type: none;
+  line-height: 1.5rem;
+  list-style-position: inside;
+  padding: 0;
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

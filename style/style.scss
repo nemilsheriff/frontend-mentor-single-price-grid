@@ -1,0 +1,125 @@
+@import 'breakpoints';
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+$color-cyan: hsl(179, 62%, 43%);
+$color-bright-yellow: hsl(71, 73%, 54%);
+$color-green: rgb(107, 188, 188);
+$color-light-gray: hsl(204, 43%, 93%);
+$color-grayish-blue: hsl(218, 22%, 67%);
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: $color-light-gray;
+
+    section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+
+        #container {
+            max-width: 350px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            background-color: $color-light-gray;
+
+            @include xl {
+                max-width: 700px;
+            }
+
+            #sub-container {
+                @include xl {
+                    display: flex;
+                    max-width: 700px;
+                }
+            }
+
+            .card {
+                padding: 1rem 1.5rem;
+
+            }
+
+            #join-community {
+                background-color: white;
+                border-top-left-radius: 0.5rem;
+                border-top-right-radius: 0.5rem;
+
+                h1 {
+                    color: $color-cyan;
+                }
+
+                h3 {
+                    color: $color-bright-yellow;
+                }
+
+                p {
+                    color: $color-grayish-blue;
+                    line-height: 2rem;
+                }
+            }
+
+            #monthly-sub {
+                background-color: $color-cyan;
+                color: $color-light-gray;
+
+                @include xl {
+                    border-bottom-left-radius: 0.5rem;
+                    width: 350px;
+                }
+
+                #price {
+                    display: flex;
+                    align-items: center;
+                }
+
+                #price-bold {
+                    font-size: 2rem;
+                    margin-right: 0.5rem;
+                }
+
+                a {
+                    text-decoration: none;
+                    display: block;
+                    background-color: $color-bright-yellow;
+                    color: white;
+                    text-align: center;
+                    padding: 0.8rem 0rem;
+                    border-radius: 0.25rem;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
+            }
+
+            #why-us {
+                background-color: $color-green;
+                color: $color-light-gray;
+                border-bottom-left-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+
+                @include xl {
+                    border-bottom-left-radius: 0rem;
+                    width: 350px;
+                }
+
+                ul {
+                    list-style-type: none;
+                    line-height: 1.5rem;
+                    list-style-position: inside;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+}
